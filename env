@@ -1,0 +1,13 @@
+if [[ -z $DISPLAY ]]  &&  [[ "$(tty)" == "/dev/tty1" ]]; then
+  export XDG_CURRENT_DESKTOP=sway
+DE="sway"
+export GDK_BACKEND=wayland
+export WLR_NO_HARDWARE_CURSORS=1
+export MOZ_ENABLE_WAYLAND=1
+
+#export GTK_USE_PORTAL=0
+# export DRI_PRIME=0
+    #export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export XDG_SESSION_TYPE=wayland
+
